@@ -1,0 +1,757 @@
+*{
+	outline: none;
+}
+
+.animated {
+   -webkit-animation-fill-mode: none; 
+     animation-fill-mode: none; 
+}
+.navbar-toggle{
+	border-color: #88c9d6;
+}
+.icon-bar{
+	background: #88c9d6;
+}
+.navbar-brand{
+	color:#88c9d6;	
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	background:#ffffff;
+	font-weight:400;
+}
+body.fix{
+	min-width:1000px;
+}
+.mTop10{ margin-top:10px; }
+.mTop15{ margin-top:15px; }
+.mTop20{ margin-top:20px; }
+.mTop30{ margin-top:30px; }
+.mTop40{ margin-top:40px; }
+.mTop50{ margin-top:50px; }
+.mTop60{ margin-top:60px; }
+.mTop70{ margin-top:70px; }
+.mTop80{ margin-top:80px; }
+.mTop90{ margin-top:90px; }
+.mTop100{margin-top:100px;}
+.main_h1{
+	font-family:'Philosopher';
+	font-weight:400;
+	font-size:30px;
+	line-height:1.4;
+	color:#000000;
+}
+.main_text{
+	font-weight:300;
+	font-size:18px;
+	color:#4c4c4c;
+	line-height:1.4;
+}
+.hr{
+	margin-top:60px;
+	margin-bottom:40px;
+	border-color: rgba(210,210,210,0.45);
+}
+.main_button{
+	font-size:18px;
+	font-weight:700;
+	color:#000000;
+	text-transform:uppercase;
+	height:50px;
+	line-height:20px;
+	padding:12px 0;
+	text-align:center;
+	width:220px;
+	border:3px solid #88c9d6;
+	margin:0 auto;
+	display:block;
+	cursor:pointer;
+}
+.hvr-bounce-to-right:before {
+	background: #88c9d6;
+}
+.main_button:hover{
+	text-decoration:none;
+}
+.main_button i{
+	font-size: 15px;
+    margin-left: 10px;
+}
+.text_left{
+	text-align:left;
+}
+
+
+
+#header{
+	min-height:90px;
+	border-bottom:1px solid #88c9d6;
+}
+.header_logo{
+	margin-top: 19px;
+}
+
+.basemenu{
+	display: block;
+    list-style: none;
+}
+.basemenu>li.baseitem{
+	padding-top:32px;
+}
+.basemenu>li.baseitem>a{
+	text-transform:uppercase;
+	font-weight: 700;
+	font-size:14px;
+	line-height:26px;
+	color:#333333;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.basemenu>li.baseitem ul{
+	display:none;
+	position:absolute;
+	list-style:none;
+	background:#ffffff;
+	width:300px;
+	padding:0; 
+	z-index: 999;
+}
+.basemenu>li.baseitem:hover,.basemenu>li.baseitem.active{
+	padding-top:28px;
+	border-top:4px solid #88c9d6;
+}
+.basemenu>li.baseitem>a:hover,.basemenu>li.baseitem.active>a{
+	background: none;
+	color:#88c9d6;
+}
+.basemenu>li.baseitem:hover ul{
+	display:block;
+}
+
+.basemenu>li.baseitem ul li{
+	display:block;
+	padding:15px 25px;
+	height:50px;
+}
+.basemenu>li.baseitem ul a{
+	font-size:14px;
+	font-weight: 400;
+	color:#6c6a6a;
+	line-height:20px;
+}
+.basemenu>li.baseitem ul li:hover,.basemenu>li.baseitem ul li.active{
+	background:#88c9d6;
+}
+.basemenu>li.baseitem ul li:hover a,.basemenu>li.baseitem ul li.active a{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+
+
+#entry_page{
+	background:rgba(80,142,247,0.8) url('../img/vhod.jpg') center no-repeat;
+	min-height:870px;
+	padding-top:10px;
+	padding-bottom:35px;
+	background-size: cover;
+}
+
+.form_my{
+	background:#ffffff;
+	margin-top: 25px;
+	
+}
+.form_my .control-label{
+	font-weight:700;
+	font-size:16px;
+	color:#4c4c4c
+}
+.form_my_title{
+	padding:30px 40px;
+	font-family:'Philosopher';
+	font-size:30px;
+	color:#538f85;
+}
+.form_my .form-group{
+	padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.form_my .form-control{
+	border: 1px solid #aeaeae;
+    border-radius: 0;
+    height: 55px;
+}
+.form_my .has-error .form-control{
+	border-color: #a94442;
+}
+.form_my .error_message .alert{
+	padding:10px;
+	margin:0;
+}
+
+.form_button_block{
+	margin-top:45px;
+	padding:50px 40px;
+	border-top:1px solid #95c2cf;
+}
+.form_my .form_my_button{
+	display:block;
+	text-decoration:none;
+	background:none;
+	padding:15px 30px 15px 30px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#000000;
+	font-size:18px;
+	font-weight:700;
+	border:3px solid #9dc8d4;
+	position:relative;
+	
+}
+.form_my .form_my_button.button_entry{
+	padding-right:60px;
+	width:170px;
+}
+.form_my .form_my_button.button_entry i{
+	background:url('../img/button_entry.png') no-repeat;
+	width: 28px;
+    height: 29px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+.form_my .form_my_button.button_forgot{
+	width:230px;
+	float:right;
+	margin-right: -15px;
+}
+.form_my .form_my_button.button_registration{
+	width:310px;
+	padding-right:60px;
+	margin:0 auto;
+}
+.form_my .form_my_button.button_registration i{
+	background:url('../img/button_registration.png') no-repeat;
+	width: 30px;
+    height: 31px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+
+
+#cabinet_page{
+	background:#9dc8d4 url('../img/cabinet.jpg') center no-repeat;
+	min-height:870px;
+	padding-top:10px;
+	padding-bottom:35px;
+	background-size: cover;
+}
+.cabinet_user_name{
+	background:rgba(149,194,207,0.8);
+	padding:20px 25px;
+}
+.cabinet_user_name_title{
+	color:#ffffff;
+}
+.cabinet_user_name_data{
+	font-weight:300;
+	font-size:16px;
+	color:#ffffff;
+	font-style:italic;
+}
+.cabinet_exit{
+	display:block;
+	background:#ffffff;
+	border:3px solid #9dc8d4;
+	padding:15px 15px 20px 15px;
+	text-align:center;
+}
+.cabinet_exit i{
+	background:url('../img/cabinet_exit.png') no-repeat;
+	width: 35px;
+    height: 35px;
+    display: block;
+	margin:0 auto;
+}
+.cabinet_exit span{
+	font-size:15px;
+	font-weight:700;
+	color:#000000;
+	display:block;
+}
+.cabinet_exit:hover{
+	text-decoration:none;	
+}
+.cabinet_exit:hover span{
+	color:#ffffff;
+}
+.cabinet_exit:before{
+	background:rgba(149,194,207,0.8);
+}
+.cabinet_balans{
+	text-align:center;
+}
+.cabinet_balans_title{
+	font-family:'Philosopher';
+	font-weight:400;
+	font-size:21px;
+	color:#000000;
+	padding:25px 20px;
+	background:#ffffff;
+}
+.cabinet_balans_price{
+	background:#538f85;
+	color:#ffffff;
+	font-size:24px;
+	font-weight:700;
+	padding:40px 20px;
+}
+
+.cabinet_balans a{
+	cursor:pointer;
+	display:block;
+	text-decoration:none;
+	background:#ffffff;
+	padding:15px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#000000;
+	font-size:18px;
+	font-weight:700;
+	border:3px solid #9dc8d4;
+}
+.cabinet_text{
+	background:#ffffff;
+	margin-right:-30px;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.cabinet_text_title{
+	color:#538f85;
+	line-height:1.4;
+	padding-left:80px;
+	position:relative;
+}
+.cabinet_text_title.icon_reloader{
+	display:block;
+	border-top:1px solid #95c2cf;
+	padding-top: 25px;
+}
+.cabinet_text_title.icon_pay:before{
+	content:'';
+	background:url('../img/icon_pay.png') no-repeat;
+	position:absolute;
+	width:37px;
+	height:26px;
+	top:10px;
+	left:20px;
+}
+.cabinet_text_title.icon_reloader:before{
+	content:'';
+	background:url('../img/icon_reloader.png') no-repeat;
+	position:absolute;
+	width:37px;
+	height:42px;
+	top:25px;
+	left:20px;
+	transform: rotate(0deg);
+	-moz-transition: transform 0.5s ease-out 0.1s;
+    -o-transition: transform 0.5s ease-out 0.1s;
+    -webkit-transition: transform 0.5s ease-out 0.1s;
+    transition: transform 0.5s ease-out 0.1s;
+}
+.cabinet_text_title.icon_reloader:hover{
+	color:#538f85;
+	text-decoration:none;
+}
+.cabinet_text_title.icon_reloader:hover:before{
+	transform: rotate(360deg);
+}
+.cabinet_text_text{
+	color:#4e4e4e;
+	font-size:16px;
+	padding-left:80px;
+}
+.cabinet_data{
+	background:#9dc8d4;
+	padding:20px 13px 50px;
+}
+.cabinet_data_title{
+	font-family:'Philosopher';
+	font-weight:400;
+	font-size:22px;
+	color:#ffffff;
+}
+.cabinet_data_block{
+	font-size:16px;
+	color:#ffffff;
+}
+.cabinet_data_block_text{
+	font-weight:300;
+}
+.cabinet_data_block_title{
+	font-weight:700;
+}
+
+.cabinet_link{
+	padding:70px 10px 10px 10px;
+	position:relative;
+	background:#ffffff;
+	min-height:185px;
+	text-align:center;
+}
+.cabinet_link_img{
+	position:absolute;
+	width:100px;
+	height:100px;
+	top:-45px;
+	left:50%;
+	margin-left:-50px;
+}
+.cabinet_link_img.icon_img_question{
+	background:url('../img/icon_img_question.png') no-repeat;
+}
+.cabinet_link_img.icon_img_blank{
+	background:url('../img/icon_img_blank.png') no-repeat;
+}
+.cabinet_link_img.icon_img_specialist{
+	background:url('../img/icon_img_specialist.png') no-repeat;
+}
+.cabinet_link_img.icon_img_base{
+	background:url('../img/icon_img_base.png') no-repeat;
+}
+.cabinet_link_name a{
+	color:#000000;
+	font-family:'Philosopher';
+	font-weight:400;
+	font-size:22px;
+	line-height:1.4;
+}
+.cabinet_link_name a:hover{
+	color:#538f85;
+	text-decoration:none;
+}
+
+
+.green_background{
+	background:#9dc8d4;
+}
+.news_list{
+	background:#ffffff;
+	padding:30px 15px;
+}
+.news_item_date{
+	font-size:14px;
+	font-weight:700;
+	color:#538f85;
+}
+.news_item_text{
+	font-size:18px;
+	font-weight:300;
+	color:#4c4c4c;
+}
+.cabinet_vote{
+	background:#ffffff;
+	padding:30px 15px;
+}
+.cabinet_vote_text{
+	font-weight:300;
+	font-size:16px;
+	color:#4c4c4c;
+}
+.cabinet_vote_question{
+	font-size:16px;
+	font-weight:700;
+	color:#538f85;
+	text-transform:uppercase;
+}
+.cabinet_vote_form{
+	margin-left:60px;
+	margin-right:60px;
+}
+.cabinet_vote_variant .vote{
+	padding:8px 0px 8px 50px;
+	font-size:16px;
+	font-weight:700;
+	color:#000000;
+	text-transform:uppercase;
+	min-height:35px;
+	line-height:19px;
+	background:url('../img/icon_vote.png') no-repeat;
+	cursor:pointer;
+}
+.cabinet_vote_variant .vote.active{
+	background:url('../img/icon_vote_active.png') no-repeat;
+}
+.cabinet_vote_button{
+	display:block;
+	text-decoration:none;
+	background:none;
+	padding:15px 30px 15px 30px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#000000;
+	font-size:18px;
+	font-weight:700;
+	border:3px solid #9dc8d4;
+	width:220px;
+}
+.cabinet_vote_count{
+	font-weight:300;
+	font-size:14px;
+	color:#4c4c4c;
+}
+.cabinet_vote_count span{
+	font-weight:700;
+}
+.vote_line {
+	width:100%;
+	height:10px;
+	border:1px solid #9dc8d4;
+	max-width:200px;
+	margin-top: 5px;
+}
+.vote_line_in {
+	background: #9dc8d4;
+	height: 10px;
+}
+.next_vote{
+	background:#538f85;
+	text-align:center;
+	padding:20px 15px;
+}
+.next_vote a{
+	display:block;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:700;
+	background: url('../img/icon_next_vote.png') no-repeat;
+	min-height:31px;
+	padding-right:45px;
+	background-position: 100% 50%;
+}
+.next_vote a:hover{
+	text-decoration:none;
+}
+
+.cabinet_partner{
+	background:#ffffff;
+	padding-bottom:30px;
+}
+.cabinet_partner_title{
+	text-align:center;
+}
+.cabinet_partner_item{
+	padding:0 10px;
+	text-align:center;
+}
+.cabinet_partner_item_img{
+	height: 115px;
+}
+.cabinet_partner_item_img img{
+	margin:0 auto;
+}
+.cabinet_partner_item_text{
+	font-weight:300;
+	font-size:16px;
+	color:#4c4c4c;
+}
+.cabinet_partner_item_link a{
+	text-decoration:underline;
+	font-size:16px;
+	font-weight:700;
+	color:#538f85;
+}
+
+.blank_lists a{
+	text-decoration:underline;
+	font-size:16px;
+	color:#538f85;
+}
+.blank_item{
+	padding:10px 25px;
+}
+
+
+#footer{
+	min-height:90px;
+	border-top: 1px solid #88c9d6;
+}
+.footer_phone{
+	font-weight:700;
+	color:#333333;
+	font-size:24px;
+	margin-top:20px;
+}
+.footer_phone a{
+	font-weight:700;
+	color:#333333;
+	font-size:24px;
+}
+.footer_phone td{
+	padding:10px 20px;
+	border: 3px solid #88c9d6;
+}
+#bottom_menu_collapse .basemenu>li.baseitem:hover,
+#bottom_menu_collapse .basemenu>li.baseitem.active {
+    padding-top: 32px;
+    border-top: 0;
+}
+
+
+
+#statement{
+	padding:30px;
+	max-width:860px;
+	display:none;
+}
+.statement_title{
+	color:#538f85;
+}
+.statement_address{
+	padding:0 100px;
+}
+.statement_address_title{
+	font-size:24px;
+	color:#4c4c4c;
+}
+.statement_address_table{
+	font-size:15px;
+	color:#4c4c4c;
+}
+.statement_address_table table{
+	border: 3px solid #95c2cf;
+}
+.statement_address_table table tbody tr td,.statement_address_table table thead tr th{
+	border:1px solid #95c2cf;
+	height:80px;
+	vertical-align:middle;
+	text-align:center;
+	font-weight:400;
+}
+
+.statement_pay{
+	
+}
+.statement_pay_title{
+	font-size:24px;
+	color:#4c4c4c;
+	text-align:center;
+}
+.statement_pay_table{
+	font-size:13px;
+	color:#4c4c4c;
+}
+.statement_pay_table table{
+	border: 3px solid #95c2cf;
+}
+.statement_pay_table table tbody tr td{
+	border:1px solid #95c2cf;
+	height:100px;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.statement_pay_table table thead tr th{
+	border:1px solid #95c2cf;
+	height:80px;
+	vertical-align:top;
+	text-align:center;
+	font-weight:400;
+}
+.statement_text{
+	font-size:16px;
+	font-weight:300;
+	color:#4c4c4c;
+}
+.statement_comment{
+	border-top:1px solid #95c2cf;
+	padding:20px 0;
+	font-size:16px;
+	font-weight:300;
+	color:#4c4c4c;
+}
+.statement_comment>div{
+	float:left;
+}
+.statement_comment span{
+	color:#538f85;
+	font-weight:700;
+}
+.statement_comment_pluss{
+	margin-right:30px;
+}
+
+
+.popup_block {
+	display: none;
+}
+.popup_form{
+	width: 400px;
+}
+.popup_form .popup_form_button{
+	display:block;
+	text-decoration:none;
+	background:none;
+	padding:10px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#000000;
+	font-size:14px;
+	font-weight:700;
+	border:2px solid #9dc8d4;
+	position:relative;
+
+}
+
+
+/*col-lg*/
+@media (min-width: 1200px){
+	
+}
+
+
+/*col-md*/
+@media (min-width: 992px) and (max-width: 1199px){
+	.form_my .form_my_button.button_forgot{
+		width:230px;
+		float:none;
+		margin-top:15px;
+	}
+}
+
+
+/*col-sm*/
+@media (min-width: 768px) and (max-width: 991px){
+	
+	
+	
+}
+
+/*col-xs*/
+@media (max-width: 767px){
+	.basemenu>li.baseitem ul{
+		display:block;
+		position: static;
+	}
+	.form_my .form_my_button.button_forgot{
+		width:230px;
+		float:none;
+		margin-top:15px;
+	}
+	.form_my .form_my_button{
+		margin-left:-15px !important;
+	}
+	
+	.cabinet_text{
+		margin-right:0;
+	}
+}
