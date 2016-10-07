@@ -42,8 +42,9 @@ class User extends Section
                 AdminColumn::lists('groups.name', 'Група'),
                 AdminColumn::text('info.name', 'Имя'),
                 AdminColumn::text('info.phone', 'Телефон'),
-                AdminColumn::text('info.room.block', 'Блок'),
-                AdminColumn::text('info.room.number', 'Номер кв.'),
+                AdminColumn::text('info.block.wave.name', 'Очередь'),
+                AdminColumn::text('info.block.name', 'Блок'),
+                AdminColumn::text('info.room_number', 'Новмер кв.'),
                 AdminColumn::datetime('created_at', 'Дата создания')->setFormat('d.m.Y'),
                 AdminColumn::datetime('updated_at', 'Дата обновления')->setFormat('d.m.Y'),
             ])->setApply(function ($query){
