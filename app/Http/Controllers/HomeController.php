@@ -86,7 +86,7 @@ class HomeController extends Controller
 		$info->room_id=1;
 			
 		$info->save();
-        /*$email_user="Спасибо за регистрацию ".$info->name."! После проверки Ваши данных, на указанный вами e-mail придет пароль к личному кабинета кабинету.";
+        $email_user="Спасибо за регистрацию ".$info->name."! После проверки Ваши данных, на указанный вами e-mail придет пароль к личному кабинета кабинету.";
 
 		Mail::raw($email_user, function ($message) use ($input) {
 			$message->from('cabinet@lazurber.ru', 'cabinet.lazurber.ru');
@@ -98,7 +98,7 @@ class HomeController extends Controller
 		Mail::raw($email_admin, function ($message){
 			$message->from('cabinet@lazurber.ru', 'cabinet.lazurber.ru');
 			$message->to("vizor@poiskovoeprodvigenie.ru");
-		});*/
+		});
 		
 		return response()->json([
 			'success' => true,
