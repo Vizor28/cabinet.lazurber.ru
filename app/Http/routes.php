@@ -33,7 +33,7 @@ Route::post('/cabinet/specialist', "CabinetController@createdSpecialist");
 
 Route::post('/register', "HomeController@register");
 Route::post('/entry', "HomeController@entry");
-
+Route::post('/blocks', "HomeController@getBlocks");
 
 
 // Маршруты запроса ссылки для сброса пароля...

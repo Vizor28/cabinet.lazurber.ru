@@ -33,7 +33,7 @@
 							<div class="clearfix"></div>
 							<div class="form_button_block">
 								<div class="col-lg-5 col-md-12 col-sm-5 col-xs-12">
-									<button type="button" id= "button_entry" class="button_entry form_my_button hvr-bounce-to-right">Войти <i></i></a>
+									<button type="button" id= "button_entry" class="button_entry form_my_button hvr-bounce-to-right">Войти <i></i></button>
 								</div>
 								<div class="col-lg-7 col-md-12 col-sm-7 col-xs-12">
 									<a href="{{ url('/password/email') }}" class="button_forgot form_my_button hvr-bounce-to-right">Забыли пароль</a>
@@ -67,16 +67,25 @@
 						<form class="form-horizontal" role="form" action="{{ url('/register') }}" method="POST" id="registration_form">
 						{{ csrf_field() }}
 							<div class="form-group">
-								<label for="inputNumber" class="col-lg-5 col-md-5 col-sm-5 col-xs-12 control-label">Блок квартиры по свидетельству <span>*</span></label>
+								<label for="inputWave" class="col-lg-5 col-md-5 col-sm-5 col-xs-12 control-label">Очередь квартир<span>*</span></label>
 								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-
-									<select class="form-control input-lg" name="block" id="inputNumber">
-										@foreach($arResult["BLOCKS"] as $block)
-											<option value="{{ $block->block }}">{{ $block->block }}</option>
+									<select class="form-control input-lg" name="wave" id="inputWave">
+										@foreach($arResult["WAVES"] as $wave)
+											<option value="{{ $wave->id }}">{{ $wave->name }}</option>
 										@endforeach
 									</select>
-									<!--<input type="text" name="block" class="form-control input-lg" id="inputNumber" placeholder="Блок квартиры" requared>-->
-
+									<div class="error_message">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputBlock" class="col-lg-5 col-md-5 col-sm-5 col-xs-12 control-label">Блок квартиры по свидетельству <span>*</span></label>
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+									<select class="form-control input-lg" name="block" id="inputBlock">
+										@foreach($arResult["BLOCKS"] as $block)
+											<option value="{{ $block->id }}">{{ $block->name }}</option>
+										@endforeach
+									</select>
 									<div class="error_message">
 									</div>
 								</div>
@@ -132,7 +141,7 @@
 							<div class="clearfix"></div>
 							<div class="form_button_block">
 								<div class="col-lg-12 col-md-12 col-sm-12">
-									<button type="button" id="button_registration" class="button_registration form_my_button hvr-bounce-to-right">зарегистрироваться <i></i></a>
+									<button type="button" id="button_registration" class="button_registration form_my_button hvr-bounce-to-right">зарегистрироваться <i></i></button>
 								</div>
 								<div class="clearfix"></div>
 							</div>

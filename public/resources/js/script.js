@@ -4,7 +4,35 @@ $(document).ready(function(){
 	if($('.fancybox').length>0){
 		$('.fancybox').fancybox();
 	}
+	$("#inputWave").change(function(){
 
+		var wave=$(this).val();
+		var token=$(this).parents("form").find('[name="_token"]').val();
+		//debugger;
+
+		$.ajax({
+			url: "/blocks",
+			data: {"wave": wave, "_token" : token},
+			cache:false,
+			type:'POST',
+			success: function(data){
+
+				//debugger;
+				if(data.success==true){
+					$("#inputBlock").html('');
+					$.each(data.blocks,function(key,value){
+						$("#inputBlock").append('<option value="'+value.id+'">'+value.name+'</option>');
+					});
+				}
+
+				//debugger;
+			},
+			error: function(jqXhr){
+				//debugger;
+			}
+		});
+
+	});
 	
 	$("#button_registration").click(function(){
 		var form=$(this).parents("form");

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Block;
 use App\Http\Requests;
+use App\Wave;
 use Illuminate\Http\Request;
 use App\Room;
 use App\Users_information as Info;
@@ -31,10 +33,29 @@ class HomeController extends Controller
     {
 		$arResult=array();
 
-        $arResult["BLOCKS"]=Room::select('block')->distinct()->get();
-        //echo "<pre>";print_r($arResult["BLOCKS"]);echo "</pre>";die();
+        //$arResult["BLOCKS"]=Room::select('block')->distinct()->get();
+
+        $arResult["WAVES"]=Wave::all();
+
+        $arResult["BLOCKS"]=Block::select("id","name")->where("wave_id",$arResult["WAVES"]->first()->id)->get();
+        //$new=$arResult["BLOCKS"][0]->name;
+        //echo "<pre>";print_r($new);echo "</pre>";die();
 
         return view('home', array("arResult" => $arResult));
+
+    }
+
+    public function getBlocks(Request $request){
+        $input=$request->all();
+
+        $this->validate($request, [
+            'wave'	=>	'required|max:5|exists:waves,id',
+        ]);
+        $blocks=Block::select("id","name")->where("wave_id",$input["wave"])->get();
+        return response()->json([
+            'success' => true,
+            'blocks' => $blocks
+        ], 200);
 
     }
 	
@@ -43,27 +64,29 @@ class HomeController extends Controller
 		$input=$request->all();
 
 		$this->validate($request, [
-			'block'	=>	'required|max:5|exists:rooms,block',
-			'number' => 'required|digits_between:1,5|exists:rooms,number,block,'.$input['block'],
+			'block'	=>	'required|max:5|exists:blocks,id',
+			'number' => 'required|digits_between:1,5',
 			'secondname'=>'required|string|max:50',
 			'surname' => 'required|string|max:50',
 			'name' => 'required|string|max:50',
 			'phone'=>'required',
 			'email'=>'required|email|max:255|unique:users_informations',
 		]);
-		
-		
-		$room = Room::where('block',$input["block"])->where('number',$input["number"])->first();
+
+        //echo "<pre>";print_r($input);echo "</pre>";die();
+		//$room = Room::where('block',$input["block"])->where('number',$input["number"])->first();
 		$info = new Info;
+        $info->room_number=strip_tags(trim($input["number"]));
+        $info->block_id=strip_tags(trim($input["block"]));
 		$info->name=strip_tags(trim($input["name"]));
 		$info->surname=strip_tags(trim($input["surname"]));
 		$info->secondname=strip_tags(trim($input["secondname"]));	
 		$info->phone=strip_tags(trim($input["phone"]));
 		$info->email=strip_tags(trim($input["email"]));
-		$info->room_id=$room->id;
+		$info->room_id=1;
 			
 		$info->save();
-        $email_user="Спасибо за регистрацию ".$info->name."! После проверки Ваши данных, на указанный вами e-mail придет пароль к личному кабинета кабинету.";
+        /*$email_user="Спасибо за регистрацию ".$info->name."! После проверки Ваши данных, на указанный вами e-mail придет пароль к личному кабинета кабинету.";
 
 		Mail::raw($email_user, function ($message) use ($input) {
 			$message->from('cabinet@lazurber.ru', 'cabinet.lazurber.ru');
@@ -75,7 +98,7 @@ class HomeController extends Controller
 		Mail::raw($email_admin, function ($message){
 			$message->from('cabinet@lazurber.ru', 'cabinet.lazurber.ru');
 			$message->to("vizor@poiskovoeprodvigenie.ru");
-		});
+		});*/
 		
 		return response()->json([
 			'success' => true,
