@@ -23,7 +23,6 @@ class HomeController extends Controller
     {
         //$this->middleware('auth');
     }
-	public function newFunction(){}
 
     /**
      * Show the application dashboard.
@@ -48,10 +47,10 @@ class HomeController extends Controller
 
     public function getBlocks(Request $request){
         $input=$request->all();
-
         $this->validate($request, [
             'wave'	=>	'required|max:5|exists:waves,id',
         ]);
+
         $blocks=Block::select("id","name")->where("wave_id",$input["wave"])->get();
         return response()->json([
             'success' => true,
@@ -98,7 +97,7 @@ class HomeController extends Controller
 		
 		Mail::raw($email_admin, function ($message){
 			$message->from('cabinet@lazurber.ru', 'cabinet.lazurber.ru');
-			$message->to("vizor@poiskovoeprodvigenie.ru");
+			$message->to("2330917@inbox.ru")->cc('bko2337390@yandex.ru')->cc('vizor@poiskovoeprodvigenie.ru');
 		});
 		
 		return response()->json([
