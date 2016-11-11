@@ -97,7 +97,7 @@ class HomeController extends Controller
 		
 		Mail::raw($email_admin, function ($message){
 			$message->from('cabinet@lazurber.ru', 'cabinet.lazurber.ru');
-			$message->to("2330917@inbox.ru")->cc('bko2337390@yandex.ru')->cc('vizor@poiskovoeprodvigenie.ru');
+			$message->to("2330917@inbox.ru")->cc('bko2337390@yandex.ru')->cc('support1@поиск-про.рф');
 		});
 		
 		return response()->json([
