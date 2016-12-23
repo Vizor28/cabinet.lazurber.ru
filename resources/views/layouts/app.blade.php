@@ -48,7 +48,7 @@ new WOW().init();
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 					<div class="header_logo">
-						<a href="/">
+						<a href="http://lazurber.ru/">
 							<img src="/resources/img/header_logo.jpg" class="img-responsive" />
 						</a>
 					</div>
@@ -66,27 +66,28 @@ new WOW().init();
 					<div class="collapse navbar-collapse" id="top_menu_collapse">
 						<ul class="nav navbar-nav basemenu">
 							<li class="baseitem">
-								<a href="http://3ocered.lazurber.ru/info/about/" target="_blank">О комплексе</a>
+								<a href="http://lazurber.ru/info/about/" target="_blank">О комплексе</a>
 								<ul>
 									
-									<li><a href="http://3ocered.lazurber.ru/news/" target="_blank">Новости</a></li>
+									<li><a href="http://lazurber.ru/news/" target="_blank">Новости</a></li>
 										
-									<li><a href="http://3ocered.lazurber.ru/process/" target="_blank">Фотогалерея</a></li>
+									<li><a href="http://lazurber.ru/process/" target="_blank">Фотогалерея</a></li>
 										
-									<li><a href="http://3ocered.lazurber.ru/info/docs/" target="_blank">Проектная декларация</a></li>		
-									<li><a href="http://3ocered.lazurber.ru/info/genplan/" target="_blank">Генплан</a></li>
-									<li><a href="http://3ocered.lazurber.ru/info/map/" target="_blank">Расположение</a></li>
-									<li><a href="http://3ocered.lazurber.ru/info/vacation/" target="_blank">Идеальные условия для отдыха</a></li>
-									<li><a href="http://3ocered.lazurber.ru/info/about/" target="_blank">О комплексе</a></li>
-									<li><a href="http://3ocered.lazurber.ru/info/video/" target="_blank">Видео</a></li>
+									<li><a href="http://lazurber.ru/info/proect/" target="_blank">Проектная декларация</a></li>
+									<li><a href="http://lazurber.ru/info/docs/" target="_blank">Разрешение на строительство</a></li>
+									<li><a href="http://lazurber.ru/info/genplan/" target="_blank">Генплан</a></li>
+									<li><a href="http://lazurber.ru/info/map/" target="_blank">Расположение</a></li>
+									<li><a href="http://lazurber.ru/info/vacation/" target="_blank">Идеальные условия для отдыха</a></li>
+									<li><a href="http://lazurber.ru/info/about/" target="_blank">О комплексе</a></li>
+									<li><a href="http://lazurber.ru/info/video/" target="_blank">Видео</a></li>
 										
-									<li><a href="http://3ocered.lazurber.ru/info/gallery/" target="_blank">Дизайн-проекты квартир</a></li>
+									<li><a href="http://lazurber.ru/info/gallery/" target="_blank">Дизайн-проекты квартир</a></li>
 								</ul>
 							</li>
-							<li class="baseitem"><a href="http://3ocered.lazurber.ru/info/env/" target="_blank">Инфраструктура</a></li>
-							<li class="baseitem"><a href="http://3ocered.lazurber.ru/info/utilities/" target="_blank">Коммуникации</a></li>	
-							<li class="baseitem"><a href="http://3ocered.lazurber.ru/info/security/" target="_blank">Безопасность</a></li>	
-							<li class="baseitem"><a href="http://3ocered.lazurber.ru/info/contacts/" class="last" target="_blank">Контакты</a></li>
+							<li class="baseitem"><a href="http://lazurber.ru/info/env/" target="_blank">Инфраструктура</a></li>
+							<li class="baseitem"><a href="http://lazurber.ru/info/utilities/" target="_blank">Коммуникации</a></li>
+							<li class="baseitem"><a href="http://lazurber.ru/info/security/" target="_blank">Безопасность</a></li>
+							<li class="baseitem"><a href="http://lazurber.ru/info/contacts/" class="last" target="_blank">Контакты</a></li>
 						</ul>
 					</div>
 				</div>
@@ -125,9 +126,9 @@ new WOW().init();
 					</div>
 					<div class="collapse navbar-collapse" id="bottom_menu_collapse">
 						<ul class="nav navbar-nav basemenu">
-							<li class="baseitem"><a href="http://3ocered.lazurber.ru/info/about/" target="_blank">О комплексе</a></li>
-							<li class="baseitem"><a href="http://3ocered.lazurber.ru/info/env/" target="_blank">Инфраструктура</a></li>
-							<li class="baseitem"><a href="http://3ocered.lazurber.ru/info/contacts/" class="last" target="_blank">Контакты</a></li>
+							<li class="baseitem"><a href="http://lazurber.ru/info/about/" target="_blank">О комплексе</a></li>
+							<li class="baseitem"><a href="http://lazurber.ru/info/env/" target="_blank">Инфраструктура</a></li>
+							<li class="baseitem"><a href="http://lazurber.ru/info/contacts/" class="last" target="_blank">Контакты</a></li>
 						</ul>
 					</div>
 				</div>
